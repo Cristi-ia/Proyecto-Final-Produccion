@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proyecto 4</title>
+  <meta name="description" content="Plantilla simple y elegante para documentar actividades del cuatrimestre: título, imagen, descripción y herramientas usadas." />
+  <link rel="stylesheet" href="estilo-general.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Fotomontaje Imágenes</h1>
+      <p class="subtitle">Cuatrimestre 1 • Producción Multimedial • 20/08/2025</p>
+    </header>
+
+    <div class="image-card">
+      <div class="image-frame">
+        <img src="locura de luna terminado.png" alt="Evidencia del proyecto" id="preview" />
+        </div>
+      </div>
+    </div>
+
+    <section class="section" aria-labelledby="desc-title">
+      <h2 id="desc-title">Resultado Del Proyecto</h2>
+      <p>
+        El objetivo de este proyecto era Crear una imagen siendo el conjunto de otras 4 y personalizarla usando GIMP, Siguiendo las instrucciones que el profesor mandó en un archivo de Word, se obtuvo la imagen de una luna en la cual dentro hay un paisaje y un hombre escalando una montaña, una mujer lanzandose en canopy y un gato en un arbol el cual esta conectado a la montaña que el hombre esta escalando.
+      </p>
+    </section>
+
+    <section class="section" aria-labelledby="tools-title">
+      <h2 id="tools-title">Herramientas Usadas</h2>
+      <p class="muted">Varias Herramientas de Gimp: Herramienta de Selección, Máscara de Capa, Herramienta de Escala Rotación y Perspectiva, Modos de Capa y Opacidad, Herramienta de Clonado o Pincel, Filtros y Colores, Herramienta de Degradado.</p>
+      <div class="badges">
+        <span class="badge">GIMP</span>
+      </div>
+    </section>
+
+    <footer>
+      Autor: Cristian Cabarcas
+    </footer>
+  </div>
+
+  <script>
+    (function(){
+      const img = document.getElementById('preview');
+      if (img && img.getAttribute('src')) {
+        img.style.display = 'block';
+        const hint = img.nextElementSibling;
+        if (hint) hint.style.display = 'none';
+      }
+    })();
+  </script>
+</body>
+</html>
