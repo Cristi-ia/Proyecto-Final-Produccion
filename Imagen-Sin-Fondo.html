@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proyecto 3</title>
+  <meta name="description" content="Plantilla simple y elegante para documentar actividades del cuatrimestre: título, imagen, descripción y herramientas usadas." />
+  <link rel="stylesheet" href="estilo-general.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Imagen Sin Fondo</h1>
+      <p class="subtitle">Cuatrimestre 1 • Producción Multimedial • 20/08/2025</p>
+    </header>
+
+    <div class="image-card">
+      <div class="image-frame">
+        <img src="imagen recortada.png" alt="Evidencia del proyecto" id="preview" />
+        </div>
+      </div>
+    </div>
+
+    <section class="section" aria-labelledby="desc-title">
+      <h2 id="desc-title">Resultado Del Proyecto</h2>
+      <p>
+        El objetivo de este proyecto eras usar una herramienta de Gimp para deshacernos del fondo azul que estaba en la imagen, usando la herramienta selección libre se obtuvo quitar el fondo azul.
+      </p>
+    </section>
+
+    <section class="section" aria-labelledby="tools-title">
+      <h2 id="tools-title">Herramientas Usadas</h2>
+      <p class="muted">Usamos la aplicación Gimp con la herramienta de selección libre, ubicamos toda la línea de la persona y finalmente quitamos el fondo azul</p>
+      <div class="badges">
+        <span class="badge">GIMP</span>
+      </div>
+    </section>
+
+    <footer>
+      Autor: Cristian Cabarcas
+    </footer>
+  </div>
+
+  <script>
+    (function(){
+      const img = document.getElementById('preview');
+      if (img && img.getAttribute('src')) {
+        img.style.display = 'block';
+        const hint = img.nextElementSibling;
+        if (hint) hint.style.display = 'none';
+      }
+    })();
+  </script>
+</body>
+</html>
