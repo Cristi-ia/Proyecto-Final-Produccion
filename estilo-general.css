@@ -131,3 +131,19 @@ footer {
   .wrap { padding: 22px 14px 40px; }
   .section { padding: 18px; }
 }
+a {
+  color: white;           
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: #66ccff;
+}
+
+a:active {
+  color: #66ccff;
+}
