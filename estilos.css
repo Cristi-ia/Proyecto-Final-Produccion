@@ -1,0 +1,36 @@
+.inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-style: dotted;
+    border-radius: 10px
+
+}
+body {
+    background-color: black;
+    color: bisque;
+    padding-left: 25px ;
+    padding-right: 30px;
+    font-family: sans-serif;
+}
+.sobre {
+    border-style: dotted;
+    border-radius: 10px;
+    justify-items: normal;
+}
+.estudios {
+    border-style: dotted;
+    border-radius: 10px
+}
+.intereses {
+    border-style: dotted;
+    border-radius: 10px
+}
+.contactos {
+    border-style: dotted;
+    border-radius: 10px
+}
+.contenedor {
+    margin: 50px auto;
+
+}

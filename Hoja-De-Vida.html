@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proyecto 1</title>
+  <meta name="description" content="Plantilla simple y elegante para documentar actividades del cuatrimestre: título, imagen, descripción y herramientas usadas." />
+  <link rel="stylesheet" href="estilo-general.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Hoja De Vida</h1>
+      <p class="subtitle">Cuatrimestre 1 • Producción Multimedial • 20/08/2025</p>
+    </header>
+
+    <div class="image-card">
+      <div class="image-frame">
+        <img src="Resultado Hoja De Vida.png" alt="Evidencia del proyecto" id="preview" />
+        </div>
+      </div>
+    </div>
+
+    <section class="section" aria-labelledby="desc-title">
+      <h2 id="desc-title">Resultado Del Proyecto</h2>
+      <p>
+        El objetivo de este proyecto era colocar en práctica todo lo aprendido sobre HTML5 en clases, decorandolo con CSS3, hicimos una hoja de vida, la cual venia con varias secciones, fondo negro y por cada seccion tiene un marco de puntos, agregando una foto personal en la cual se uso una IA recomendada por el docente, tambien agregando links que llevan a mis páginas oficiales de redes sociales.
+      </p>
+    </section>
+
+    <section class="section" aria-labelledby="tools-title">
+      <h2 id="tools-title">Herramientas Usadas</h2>
+      <p class="muted">Todo lo aprendido en clases y lo practicado en Free Code Camp, usando el editor visual studio Code y publicandolo en Github</p>
+      <div class="badges">
+        <span class="badge">HTML5</span>
+        <span class="badge">CSS3</span>
+        <span class="badge">VS Code</span>
+        <span class="badge">Github</span>
+      </div>
+    </section>
+
+    <footer>
+      Autor: Cristian Cabarcas
+    </footer>
+  </div>
+
+  <script>
+    (function(){
+      const img = document.getElementById('preview');
+      if (img && img.getAttribute('src')) {
+        img.style.display = 'block';
+        const hint = img.nextElementSibling;
+        if (hint) hint.style.display = 'none';
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+:root {
+  --bg: #0b0c10;
+  --card: #13151a;
+  --text: #f5f6f8;
+  --muted: #b8bcc7;
+  --accent: #5eead4;
+  --border: #2a2f3a;
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrap {
+  max-width: 980px;
+  padding: 32px 20px 60px;
+  margin: 0 auto;
+}
+
+header h1 {
+  text-align: center;
+  font-size: clamp(28px, 5vw, 44px);
+  letter-spacing: 0.4px;
+  margin: 10px 0 6px;
+}
+
+header p.subtitle {
+  text-align: center;
+  margin: 0 0 28px;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.image-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.0));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+  margin: 18px auto 28px;
+  transition: transform .2s ease, box-shadow .2s ease;}
+  img {
+  width: auto;
+  height: auto;
+}
+
+.image-card:hover {
+  transform: translateY(-2px);
+}
+
+.image-frame {
+  aspect-ratio: auto;
+  width: auto;
+  border-radius: calc(var(--radius) - 8px);
+  border: 2px dashed #3a4050;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background: #0e1016;
+  position: relative;
+}
+
+.image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.image-hint {
+  color: var(--muted);
+  font-size: 0.95rem;
+  text-align: center;
+  padding: 10px 14px;
+}
+
+.section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 22px 22px;
+  margin: 0 auto 16px;
+}
+
+.section h2 {
+  font-size: clamp(18px, 2.6vw, 22px);
+  margin: 0 0 10px;
+  letter-spacing: .3px;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.badge {
+  border: 1px solid var(--border);
+  background: #0f1117;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+footer {
+  text-align: center;
+  margin-top: 26px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 560px) {
+  .wrap { padding: 22px 14px 40px; }
+  .section { padding: 18px; }
+}
