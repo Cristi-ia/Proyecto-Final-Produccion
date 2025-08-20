@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proyecto 2</title>
+  <meta name="description" content="Plantilla simple y elegante para documentar actividades del cuatrimestre: título, imagen, descripción y herramientas usadas." />
+  <link rel="stylesheet" href="estilo-general.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Trabajo De Investigación</h1>
+      <p class="subtitle">Cuatrimestre 1 • Producción Multimedial • 20/08/2025</p>
+    </header>
+
+    <div class="image-card">
+      <div class="image-frame">
+        <img src="Redimensión.png" alt="Evidencia del proyecto" id="preview" />
+        </div>
+      </div>
+    </div>
+
+    <section class="section" aria-labelledby="desc-title">
+      <h2 id="desc-title">Resultado Del Proyecto</h2>
+      <p>
+        El objetivo de este proyecto era investigar lo exigido por el profe y crear un informe de manera detallada y ordenada, y se investigo todo lo respectivo a La importancia del texto, color e imágenes en producción Multimedial, creando en word un informe sobre todo esto.
+      </p>
+    </section>
+
+    <section class="section" aria-labelledby="tools-title">
+      <h2 id="tools-title">Herramientas Usadas</h2>
+      <p class="muted">Toda información verídica de un navegador a internet, Word para crear el informe y saber organizar</p>
+      <div class="badges">
+        <span class="badge">Word</span>
+        <span class="badge">Google Chrome</span>
+      </div>
+    </section>
+
+    <footer>
+      Autor: Cristian Cabarcas
+    </footer>
+  </div>
+
+  <script>
+    (function(){
+      const img = document.getElementById('preview');
+      if (img && img.getAttribute('src')) {
+        img.style.display = 'block';
+        const hint = img.nextElementSibling;
+        if (hint) hint.style.display = 'none';
+      }
+    })();
+  </script>
+</body>
+</html>
